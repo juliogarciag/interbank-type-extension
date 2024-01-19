@@ -17,7 +17,7 @@ Interbank Perú, as other banks, use a virtual keyboard, which don't allow users
 <img width="1254" alt="Screenshot 2024-01-19 at 16 42 51" src="https://github.com/juliogarciag/interbank-type-extension/assets/362584/e364939a-120f-4115-9ba2-5d060b97ac3b">
 
 - Uncompress the downloaded file somewhere in a folder.
-- Go to [chrome://extensions](chrome://extensions) and enable `Developer Mode`.
+- Go to `chrome://extensions` in a new tab and enable `Developer Mode`.
 
 <img width="1920" alt="Screenshot 2024-01-19 at 17 01 11" src="https://github.com/juliogarciag/interbank-type-extension/assets/362584/2e5f0c28-3b9f-4571-aad0-6d9ac6405581">
 

@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Interbank Type Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a chrome extension to help type normal text into the Interbank Perú "Banca por Internet" virtual keyboard
 
-Currently, two official plugins are available:
+## Why?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Interbank Perú, as other banks, use a virtual keyboard, which don't allow users to paste passwords from password managers without the hassle of using a mouse. This, in turn, incentivizes people to use less secure passwords. With this, you can generate a complex password and then type it into it.
 
-## Expanding the ESLint configuration
+## Instalation Instructions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- In this Github page, go to the releases section here and open the latest available release:
 
-- Configure the top-level `parserOptions` property like this:
+<img width="361" alt="Screenshot 2024-01-19 at 16 41 02" src="https://github.com/juliogarciag/interbank-type-extension/assets/362584/9f669c72-36fc-433d-b02b-d4952f1948dc">
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Download the zip file in the release page:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<img width="1254" alt="Screenshot 2024-01-19 at 16 42 51" src="https://github.com/juliogarciag/interbank-type-extension/assets/362584/e364939a-120f-4115-9ba2-5d060b97ac3b">
+
+- Uncompress the downloaded file somewhere in a folder.
+- Go to [chrome://extensions](chrome://extensions) and enable `Developer Mode`.
+
+<img width="1920" alt="Screenshot 2024-01-19 at 17 01 11" src="https://github.com/juliogarciag/interbank-type-extension/assets/362584/2e5f0c28-3b9f-4571-aad0-6d9ac6405581">
+
+- In the same page, click on `Load unpacked` and select the folder in which the zip file was downloaded.
+
+## Usage Instructions
+
+- When you're in [https://bancaporinternet.interbank.pe/login](https://bancaporinternet.interbank.pe/login), open the extension using the extension button on chrome (You can pin this extension too).
+- You will see this popup window:
+
+<img width="332" alt="Screenshot 2024-01-19 at 17 03 49" src="https://github.com/juliogarciag/interbank-type-extension/assets/362584/9e55c436-18e3-4476-badb-d5d36a4fcafe">
+
+- Type your password (or copy it from your password manager) and press `Enter`. The extension will start typing the password in the virtual password.
+
+## Disclaimer
+
+This extension doesn't send your password to the internet, or store your password locally or remotely. It's basically a script to automate typing into the Interbank virtual keyboard wrapped in a chrome extension for ease of use.

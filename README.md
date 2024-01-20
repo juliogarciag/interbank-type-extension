@@ -4,7 +4,7 @@ This is a chrome extension to help type normal text into the Interbank Perú "Ba
 
 ## Why?
 
-Interbank Perú, as other banks, use a virtual keyboard, which don't allow users to paste passwords from password managers without the hassle of using a mouse. This, in turn, incentivizes people to use less secure passwords. With this, you can generate a complex password and then type it into it.
+Interbank Perú, as other banks, use a virtual keyboard, which don't allow users to paste passwords from password managers without the hassle of using a mouse. This, in turn, incentivizes people to use less secure passwords. With this, you can generate a complex password and then type/paste it instead.
 
 ## Instalation Instructions
 

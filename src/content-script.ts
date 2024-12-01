@@ -48,7 +48,7 @@ async function waitForKeyboardChange(action: () => void) {
     const newKeys = getVirtualKeys();
     const maxLength = Math.max(newKeys.length, oldKeys.length);
     const isKeyboardDifferent = times(maxLength).some(
-      (index) => oldKeys[index] !== newKeys[index]
+      (index) => oldKeys[index] !== newKeys[index],
     );
 
     return isKeyboardDifferent;
@@ -73,7 +73,7 @@ function findVirtualKey(characterToFind: string) {
 }
 
 function getVirtualKeys() {
-  return [...document.querySelectorAll(".ibk-keyboard-virtual .key")];
+  return [...document.querySelectorAll(".ibk-keyboard-virtual .key > *")];
 }
 
 function getPasswordInput() {
@@ -104,7 +104,7 @@ function getCharacterType(character: string): CharacterType {
 function waitUntil(
   condition: () => boolean,
   interval: number = 1000,
-  timeout: number = 10000
+  timeout: number = 10000,
 ): Promise<void> {
   let elapsedTime = 0;
 
